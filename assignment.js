@@ -1,4 +1,7 @@
 
+//git link : https://github.com/afroja-akter/assignment3
+
+
 // Problem number 1 convert kilometer to meter
 
 var inputInKilometer = 3;
