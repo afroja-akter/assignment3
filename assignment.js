@@ -11,7 +11,7 @@ function kilometerToMeter(inputInKilometer){
     }
 
     else{
-        console.log("kilometer cannot negetive value");
+        console.log("Distance cannot negetive value");
     } 
 
     return outputInMeter ;
@@ -69,16 +69,18 @@ console.log(cost);
 
 var friendsName = ["Maliha", "AntoraSaha", "Munia", "jim", "MehediRabby", "Faysalhasin" ];
 
-var maxElement =  friendsName[0];
-function megaFriend(friendsName){
-    for (var i = 0; i < friendsName.length; i++) {
-
-        if (friendsName[i] > maxElement) {
-          
-          maxElement = friendsName[i];
-        }
+function megaFriend(array)
+{
+  var max_element = array[0].length;
+  var answer = array[0];
+  for (var i = 1; i < array.length; i++) {
+      var maxi = array[i].length;
+      if (maxi > max_element) {
+          answer = array[i];
+          max_element = maxi;
       }
-      return maxElement;
+  }
+  return answer;
 }
 var max = megaFriend(friendsName);
 console.log(max);
